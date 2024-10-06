@@ -5,7 +5,6 @@ Welcome to my **Data Structures and Algorithms (DSA) Solutions** repository! Thi
 ## 📁 Structure
 
 Each solution is organized by problem name and includes the following:
-- **Problem description** (if available)
 - **Language**: All problems are solved using **C++**, unless otherwise specified.
 - **Solution**: Optimized and tested code for each problem.
 - **Explanations**: Some problems include a brief explanation of the approach used, along with comments in the code.
