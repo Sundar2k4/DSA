@@ -6,19 +6,17 @@ public:
         int n = s.length();
         unordered_map<char, int> hash;
         int count = 0;
-
-        for (int i = 0; i < n; i++)
+        int left = 0;
+        for (int right = 0; right < n; right++)
         {
+            hash[s[right]]++;
 
-            hash.clear();
-            for (int j = i; j < n; j++)
+            while (hash['a'] > 0 && hash['b'] > 0 && hash['c'] > 0)
             {
+                count += (n - right);
 
-                hash[s[j]]++;
-                if (hash['a'] > 0 && hash['b'] > 0 && hash['c'] > 0)
-                {
-                    count++;
-                }
+                hash[s[left]]--;
+                left++;
             }
         }
 
